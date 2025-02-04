@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: auction-service
+    container_name: business-service
     build:
       context: .
       dockerfile: Dockerfile
