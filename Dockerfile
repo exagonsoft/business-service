@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --no-cache
+RUN npm install -g @nest/cli && npm install --no-cache
 
 # Copy the rest of the application code
 COPY . .
